@@ -1,109 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kaakour Commerce</title>
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: Arial, sans-serif;
-    }
-
     body {
-      line-height: 1.6;
-      color: #333;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
     }
-
     header {
       background-color: #0A73B7;
       color: white;
+      padding: 40px 20px;
       text-align: center;
-      padding: 60px 20px 40px;
     }
-
-    header h1 {
-      font-size: 40px;
-      margin-bottom: 10px;
+    header img {
+      max-width: 150px;
     }
-
-    header p {
-      font-size: 18px;
-      opacity: 0.9;
+    nav {
+      background-color: #063b5b;
+      display: flex;
+      justify-content: center;
     }
-
-    section {
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 15px 20px;
+      display: inline-block;
+    }
+    nav a:hover {
+      background-color: #095a8b;
+    }
+    .hero {
+      background-image: url('https://images.unsplash.com/photo-1618384887921-1d06cddf4090');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+    }
+    .hero h1 {
+      font-size: 48px;
+      margin: 0 0 20px;
+    }
+    .section {
       padding: 60px 20px;
-      max-width: 900px;
+      max-width: 1000px;
       margin: auto;
-    }
-
-    section h2 {
-      color: #0A73B7;
-      font-size: 28px;
+      background-color: white;
       margin-bottom: 20px;
     }
-
-    ul {
-      list-style: none;
-      padding-left: 0;
-    }
-
-    ul li::before {
-      content: "\2022";
+    .section h2 {
       color: #0A73B7;
-      font-weight: bold;
-      display: inline-block;
-      width: 1em;
+      margin-bottom: 20px;
     }
-
     footer {
-      background-color: #f4f4f4;
-      color: #555;
+      background-color: #0A73B7;
+      color: white;
       text-align: center;
-      padding: 30px 20px;
-      font-size: 14px;
-    }
-
-    .logo {
-      width: 100px;
-      margin-bottom: 15px;
+      padding: 20px;
     }
   </style>
 </head>
 <body>
   <header>
-    <img src="https://i.imgur.com/WG4o4CR.png" alt="Kaakour Commerce Logo" class="logo">
+    <img src="https://i.ibb.co/fHk7Lwh/kaakour-logo-white.png" alt="Kaakour Commerce">
     <h1>Kaakour Commerce</h1>
-    <p>Import & Export | Heavy Equipment & Auto Parts | Middle East & Africa</p>
+    <p>Import & Export | Heavy Equipment | Auto Parts</p>
   </header>
 
-  <section id="about">
-    <h2>About Us</h2>
-    <p>Kaakour Commerce is a trusted provider in the import and export of heavy equipment and automotive parts. Based in Lebanon, we serve professionals and businesses across the Middle East and Africa with reliable sourcing, logistics and expert support.</p>
-  </section>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
-  <section id="services">
+  <div class="hero">
+    <h1>Trusted Sourcing Across Lebanon & the Middle East</h1>
+    <p>Delivering quality auto parts and equipment since day one</p>
+  </div>
+
+  <div class="section" id="about">
+    <h2>About Us</h2>
+    <p>Kaakour Commerce is a trusted provider in the import and export of heavy equipment and automotive parts. Based in Lebanon, we serve professionals and businesses across the Middle East and Africa. Our focus is on providing reliable sourcing and logistics for essential equipment and materials.</p>
+  </div>
+
+  <div class="section" id="services">
     <h2>Our Services</h2>
     <ul>
-      <li>Wholesale automotive parts</li>
-      <li>Heavy equipment trading</li>
-      <li>Import & Export logistics</li>
-      <li>Trusted sourcing from Asia & Europe</li>
+      <li>Import & Export of Heavy Machinery</li>
+      <li>Wholesale Auto Parts Supply</li>
+      <li>Custom Sourcing for Industrial Clients</li>
+      <li>Shipping & Logistics Management</li>
     </ul>
-  </section>
+  </div>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:contact@kaakourcommerce.com">contact@kaakourcommerce.com</a><br>
-       Phone: +961 3267749<br>
-       Location: Baassir, Lebanon</p>
-  </section>
+  <div class="section" id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: contact@kaakourcommerce.com</p>
+    <p>Phone: +961 3267749</p>
+    <p>Location: Baassir, Lebanon</p>
+  </div>
 
   <footer>
-    <p>&copy; 2025 Kaakour Commerce. All rights reserved.</p>
+    &copy; 2025 Kaakour Commerce. All rights reserved.
   </footer>
 </body>
 </html>
+
